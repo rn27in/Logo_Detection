@@ -2,6 +2,9 @@ import cv2
 import numpy as np
 
 def drawcontours(img):
+    '''
+    This function is to draw contours on original image
+    '''
     image = cv2.imread(img)
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
     blurred = cv2.GaussianBlur(gray, (13, 13), 0)
